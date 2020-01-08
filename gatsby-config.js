@@ -5,5 +5,21 @@
  */
 
 module.exports = {
+
   /* Your site config here */
+}
+
+exports.onCreateWebpackConfig = ({ getConfig, stage, actions }) => {
+  const config = getConfig()
+  if (stage.startsWith('develop') && config.resolve) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'react-dom': '@hot-loader/react-dom'
+    }
+  }
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
+    },
+  })
 }
