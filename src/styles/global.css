@@ -1,8 +1,12 @@
 
 .hero {
 	min-height: 400px;
+	text-align: right;
 }
-
+.hero:not(.reverse):nth-child(odd), .row.reverse:nth-child(even) {
+	flex-direction: row-reverse;
+	text-align: left;
+}
 .hero-content > * {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
