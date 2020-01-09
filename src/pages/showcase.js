@@ -10,19 +10,19 @@ export default () => (
 		</Summary>
 		<Summary>
 			<h1>ONLINE PROFILE</h1>
-			<p><img src="/images/template.jpg"></img></p>
+			<p><img src="/images/template.jpg" alt=""/></p>
 		</Summary>
 		<Summary>
 			<h1>ONLINE SYSTEM</h1>
-			<p><img src="/images/template.jpg"></img></p>
+			<p><img src="/images/template.jpg" alt=""/></p>
 		</Summary>
 		<Summary>
 			<h1>DIGITAL CONTENT</h1>
-			<p><img src="/images/template.jpg"></img></p>
+			<p><img src="/images/template.jpg" alt=""/></p>
 		</Summary>
 		<Summary>
 			<h1>DIGITAL GRAPHICS</h1>
-			<p><img src="/images/template.jpg"></img></p>
+			<p><img src="/images/template.jpg" alt=""/></p>
 		</Summary>
 	</Layout>
 )
