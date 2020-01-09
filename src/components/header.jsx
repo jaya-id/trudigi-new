@@ -8,9 +8,9 @@ export default () => (
 			<Logo className="mr-2" style={{height: '40px'}}/>
 			<span>TRUDIGI</span>
 		</a>
-		<a className="navbar-brand" href="/showcase">Showcase</a>
-		<a className="navbar-brand" href="/">Products</a>
-		<a className="navbar-brand" href="/">Contact</a>
+		<a className="navbar-brand" href="/showcase/">Showcase</a>
+		<a className="navbar-brand" href="/products/">Products</a>
+		<a className="navbar-brand" href="/contact/">Contact</a>
 	</nav>
   </header>
 )
