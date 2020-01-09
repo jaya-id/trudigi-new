@@ -16,6 +16,18 @@
 	background-size: cover;
 	background-position: center;
 }
+.heroprofile {
+	min-height: 400px;
+	text-align: center;
+}
+.heroprofile-content > * {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.heroprofile-img {
+	background-size: cover;
+	background-position: center;
+}
 .nav-link{
 	color:black;
 }
