@@ -1,3 +1,14 @@
-body {
-	font: cursive;
+
+.hero {
+	min-height: 400px;
+}
+
+.hero-content > * {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.hero-img {
+	background-size: cover;
+	background-position: center;
 }

@@ -1,9 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
+import Hero from '../components/hero'
+import Summary from '../components/summary'
 
 export default () => (
 	<Layout>
-		<h1>TRUDIGI</h1>
-		Index Lorem Ipsum
+		<Summary>
+			<h1>TRUDIGI (LOGO)</h1>
+			<p>Di TRUDIGI Kami Memberikan Layanan Profesional untuk Solusi Digital Bisnis Anda</p>
+		</Summary>
+		<Hero img="/images/template.jpg" href="/showcase">
+			<h2>OUR WORK</h2>
+			<h4>Ketepatan dan Kualitas adalah Prioritas Kami</h4>
+			<p>TRUDIGI Berkomitmen untuk menciptakan Solusi Digital berkualitas yang menarik, fungsional dan berkualitas tinggi</p>
+		</Hero>
 	</Layout>
 )
