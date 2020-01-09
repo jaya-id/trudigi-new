@@ -8,6 +8,9 @@ export default () => (
 			<Logo style={{height: '40px'}}/>
 			TRUDIGI
 		</a>
+		<a className="navbar-brand" href="/showcase">Showcase</a>
+		<a className="navbar-brand" href="/">Products</a>
+		<a className="navbar-brand" href="/">Contact</a>
 	</nav>
   </header>
 )
