@@ -1,4 +1,13 @@
-import {itemWorkDuration, itemRevisionPeriod} from '../shared'
+
+import {
+	itemWorkDuration,
+	itemRevisionPeriod,
+	itemSecurityPatch,
+	itemCRUD,
+	itemCP,
+	itemType,
+	itemPostType
+} from './shared'
 
 export default {
 	title: "Online Profile",
@@ -16,6 +25,8 @@ export default {
 			items: [
 				itemWorkDuration(15),
 				itemRevisionPeriod(3),
+				itemCP(1),
+				itemType('single')
 			]
 		},
 		{
@@ -30,6 +41,9 @@ export default {
 			items: [
 				itemWorkDuration(21),
 				itemRevisionPeriod(7),
+				itemCP(5),
+				itemType('single'),
+				itemPostType('simple')
 			]
 		},
 		{
@@ -43,6 +57,10 @@ export default {
 			items: [
 				itemWorkDuration(30),
 				itemRevisionPeriod(10),
+				itemCP(10),
+				itemType('single'),
+				itemCRUD(3),
+				itemPostType('normal')
 			]
 		},
 		{
@@ -58,6 +76,11 @@ export default {
 			items: [
 				itemWorkDuration(60),
 				itemRevisionPeriod(15),
+				itemSecurityPatch(30),
+				itemCP(20),
+				itemType('double'),
+				itemCRUD(5),
+				itemPostType('complete')
 			]
 		},
 		{
@@ -70,8 +93,14 @@ export default {
                 "- Komunitas Besar"
 			],
 			items: [
+
 				itemWorkDuration(120),
 				itemRevisionPeriod(60),
+				itemSecurityPatch(90),
+				itemCP(30),
+				itemType('triple'),
+				itemCRUD(10),
+				itemPostType('complete')
 			]
 		}
 	]
