@@ -26,12 +26,6 @@ const itemCRUD = (items) => ({
 	img: "/images/template.jpg",
 })
 
-const itemCP = (items) => ({
-	title: `Up To ${items} Custome Pages`,
-	description: `lorem ipsum`,
-	notes: `Berikutnya Rp 50.000 untuk setiap tambahan Custom Pages`,
-	img: "/images/template.jpg",
-})
 
 const itemAdmin = (kind) => ({
 	single: {
@@ -46,42 +40,6 @@ const itemAdmin = (kind) => ({
 	},
 	master: {
 		title: `Satu Master Akun, Banyak Jenis User`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-}[kind])
-
-const itemType = (kind) => ({
-	single: {
-		title: `Bootstrap`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-	double: {
-		title: `Bootstrap + React`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-	triple: {
-		title: `Bootstrap + React + PWA`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-}[kind])
-
-const itemPostType = (kind) => ({
-	simple: {
-		title: `Simple Post`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-	normal: {
-		title: `Post + Pages + Images`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-	complete: {
-		title: `Post + Pages + Galery + Custom + Tags + Categorization`,
 		description: `Lorem Ipsum`,
 		img: "/images/template.jpg",
 	},

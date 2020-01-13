@@ -107,6 +107,50 @@ const systemBacklog = () => ({
 
 
 
+const profileCustomPages = (items) => ({
+	title: `Up To ${items} Custome Pages`,
+	description: `lorem ipsum`,
+	notes: `Berikutnya Rp 50.000 untuk setiap tambahan Custom Pages`,
+	img: "/images/template.jpg",
+})
+
+
+const profileType = (kind) => ({
+	single: {
+		title: `Bootstrap`,
+		description: `Lorem Ipsum`,
+		img: "/images/template.jpg",
+	},
+	double: {
+		title: `Bootstrap + React`,
+		description: `Lorem Ipsum`,
+		img: "/images/template.jpg",
+	},
+	triple: {
+		title: `Bootstrap + React + PWA`,
+		description: `Lorem Ipsum`,
+		img: "/images/template.jpg",
+	},
+}[kind])
+
+const profilePostType = (kind) => ({
+	simple: {
+		title: `Simple Post`,
+		description: `Lorem Ipsum`,
+		img: "/images/template.jpg",
+	},
+	normal: {
+		title: `Post + Pages + Images`,
+		description: `Lorem Ipsum`,
+		img: "/images/template.jpg",
+	},
+	complete: {
+		title: `Post + Pages + Galery + Custom + Tags + Categorization`,
+		description: `Lorem Ipsum`,
+		img: "/images/template.jpg",
+	},
+}[kind])
+
 
 export {
 	itemWorkDuration,
@@ -123,5 +167,8 @@ export {
 	systemDesktopMobileApp,
 	systemSocialLogin,
 	systemRestAPI,
-	systemBacklog
+	systemBacklog,
+	profileCustomPages,
+	profileType,
+	profilePostType
 }

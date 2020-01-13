@@ -2,12 +2,12 @@
 import {
 	itemWorkDuration,
 	itemRevisionPeriod,
-	itemSecurityPatch,
-	itemCRUD,
-	itemCP,
-	itemType,
-	itemPostType
-} from './shared'
+	onlineSecurityPatch,
+	onlineCRUD,
+	profileCustomPages,
+	profileType,
+	profilePostType
+} from '../shared'
 
 export default {
 	title: "Online Profile",
@@ -25,8 +25,8 @@ export default {
 			items: [
 				itemWorkDuration(15),
 				itemRevisionPeriod(3),
-				itemCP(1),
-				itemType('single')
+				profileCustomPages(1),
+				profileType('single')
 			]
 		},
 		{
@@ -41,9 +41,9 @@ export default {
 			items: [
 				itemWorkDuration(21),
 				itemRevisionPeriod(7),
-				itemCP(5),
-				itemType('single'),
-				itemPostType('simple')
+				profileCustomPages(5),
+				profileType('single'),
+				profilePostType('simple')
 			]
 		},
 		{
@@ -57,10 +57,10 @@ export default {
 			items: [
 				itemWorkDuration(30),
 				itemRevisionPeriod(10),
-				itemCP(10),
-				itemType('single'),
-				itemCRUD(3),
-				itemPostType('normal')
+				profileCustomPages(10),
+				profileType('single'),
+				onlineCRUD(3),
+				profilePostType('normal')
 			]
 		},
 		{
@@ -76,11 +76,11 @@ export default {
 			items: [
 				itemWorkDuration(60),
 				itemRevisionPeriod(15),
-				itemSecurityPatch(30),
-				itemCP(20),
-				itemType('double'),
-				itemCRUD(5),
-				itemPostType('complete')
+				onlineSecurityPatch(30),
+				profileCustomPages(20),
+				profileType('double'),
+				onlineCRUD(5),
+				profilePostType('complete')
 			]
 		},
 		{
@@ -96,11 +96,11 @@ export default {
 
 				itemWorkDuration(120),
 				itemRevisionPeriod(60),
-				itemSecurityPatch(90),
-				itemCP(30),
-				itemType('triple'),
-				itemCRUD(10),
-				itemPostType('complete')
+				onlineSecurityPatch(90),
+				profileCustomPages(30),
+				profileType('triple'),
+				onlineCRUD(10),
+				profilePostType('complete')
 			]
 		}
 	]
