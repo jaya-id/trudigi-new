@@ -24,6 +24,7 @@ export default {
 			items: [
 				itemDurasiPengerjaan(21),
 				itemDurasiRevisi(7),
+				itemAdmin('single')
 			]
 		},
 		{
@@ -37,6 +38,9 @@ export default {
 			items: [
 				itemDurasiPengerjaan(30),
 				itemDurasiRevisi(10),
+				itemCRUD(3),
+				itemAdmin('admin'),
+				itemUser(1),
 			]
 		},
 		{
@@ -50,6 +54,12 @@ export default {
 			items: [
 				itemDurasiPengerjaan(30),
 				itemDurasiRevisi(10),
+				itemSecurityPatch(30),
+				itemCRUD(7),
+				itemAdmin('master'),
+				itemUser(3),
+				itemAuthorization(),
+				itemValidation()
 			]
 		},
 		{
@@ -63,6 +73,12 @@ export default {
 			items: [
 				itemDurasiPengerjaan(90),
 				itemDurasiRevisi(30),
+				itemSecurityPatch(90),
+				itemCRUD(15),
+				itemAdmin('master'),
+				itemUser(6),
+				itemAuthorization(),
+				itemValidation()
 			]
 		},
 		{
