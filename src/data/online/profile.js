@@ -1,4 +1,4 @@
-import {itemDurasiPengerjaan, itemDurasiRevisi} from './shared'
+import {itemWorkDuration, itemRevisionPeriod} from '../shared'
 
 export default {
 	title: "Online Profile",
@@ -14,8 +14,8 @@ export default {
                 "- Developer"
 			],
 			items: [
-				itemDurasiPengerjaan(15),
-				itemDurasiRevisi(3),
+				itemWorkDuration(15),
+				itemRevisionPeriod(3),
 			]
 		},
 		{
@@ -28,8 +28,8 @@ export default {
                 "- Enterpreneur"
 			],
 			items: [
-				itemDurasiPengerjaan(21),
-				itemDurasiRevisi(7),
+				itemWorkDuration(21),
+				itemRevisionPeriod(7),
 			]
 		},
 		{
@@ -41,8 +41,8 @@ export default {
 				"- Perusahaan Kecil"
 			],
 			items: [
-				itemDurasiPengerjaan(30),
-				itemDurasiRevisi(10),
+				itemWorkDuration(30),
+				itemRevisionPeriod(10),
 			]
 		},
 		{
@@ -56,8 +56,8 @@ export default {
                 "- Yayasan"
 			],
 			items: [
-				itemDurasiPengerjaan(60),
-				itemDurasiRevisi(15),
+				itemWorkDuration(60),
+				itemRevisionPeriod(15),
 			]
 		},
 		{
@@ -70,8 +70,8 @@ export default {
                 "- Komunitas Besar"
 			],
 			items: [
-				itemDurasiPengerjaan(120),
-				itemDurasiRevisi(60),
+				itemWorkDuration(120),
+				itemRevisionPeriod(60),
 			]
 		}
 	]
