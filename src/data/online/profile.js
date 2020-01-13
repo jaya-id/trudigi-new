@@ -1,4 +1,12 @@
-import {itemDurasiPengerjaan, itemDurasiRevisi} from './shared'
+import {
+	itemDurasiPengerjaan,
+	itemDurasiRevisi,
+	itemSecurityPatch,
+	itemCRUD,
+	itemCP,
+	itemType,
+	itemPostType
+} from './shared'
 
 export default {
 	title: "Online Profile",
@@ -16,6 +24,8 @@ export default {
 			items: [
 				itemDurasiPengerjaan(15),
 				itemDurasiRevisi(3),
+				itemCP(1),
+				itemType('single')
 			]
 		},
 		{
@@ -30,6 +40,9 @@ export default {
 			items: [
 				itemDurasiPengerjaan(21),
 				itemDurasiRevisi(7),
+				itemCP(5),
+				itemType('single'),
+				itemPostType('simple')
 			]
 		},
 		{
@@ -43,6 +56,10 @@ export default {
 			items: [
 				itemDurasiPengerjaan(30),
 				itemDurasiRevisi(10),
+				itemCP(10),
+				itemType('single'),
+				itemCRUD(3),
+				itemPostType('normal')
 			]
 		},
 		{
@@ -58,6 +75,11 @@ export default {
 			items: [
 				itemDurasiPengerjaan(60),
 				itemDurasiRevisi(15),
+				itemSecurityPatch(30),
+				itemCP(20),
+				itemType('double'),
+				itemCRUD(5),
+				itemPostType('complete')
 			]
 		},
 		{
@@ -72,6 +94,11 @@ export default {
 			items: [
 				itemDurasiPengerjaan(120),
 				itemDurasiRevisi(60),
+				itemSecurityPatch(90),
+				itemCP(30),
+				itemType('triple'),
+				itemCRUD(10),
+				itemPostType('complete')
 			]
 		}
 	]
