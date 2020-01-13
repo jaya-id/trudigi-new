@@ -11,6 +11,9 @@ export default ({ data, theme }) => {
 		<Summary>
 			<h1 className={`text-${theme}`}>{data.title}</h1>
 			<p>{data.summary}</p>
+		<Summary>
+		<hr/>
+		</Summary>
 			<p>Pilih Jenis Paket&nbsp;:</p>
 			<div class="btn-group mr-2" role="group" aria-label="First group">
 				{
@@ -34,7 +37,7 @@ export default ({ data, theme }) => {
 					</div>
 				</div>
 				<span className="d-none d-md-block"><small>{model.summary}</small></span>
-				<span className="ml-auto"><b>{model.price.toLocaleString('id-ID', {
+				<span className="ml-auto h5 mb-0"><b>{model.price.toLocaleString('id-ID', {
 					style: 'currency',
 					currency: 'IDR',
 				})}</b></span>
