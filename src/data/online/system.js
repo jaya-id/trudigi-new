@@ -1,4 +1,13 @@
-import {itemDurasiPengerjaan, itemDurasiRevisi} from './shared'
+import {
+	itemDurasiPengerjaan,
+	itemDurasiRevisi,
+	itemSecurityPatch,
+	itemCRUD,
+	itemAdmin,
+	itemUser,
+	itemAuthorization,
+	itemValidation
+} from './shared'
 
 export default {
 	title: "Online System",
@@ -67,6 +76,12 @@ export default {
 			items: [
 				itemDurasiPengerjaan(120),
 				itemDurasiRevisi(60),
+				itemSecurityPatch(180),
+				itemCRUD(30),
+				itemAdmin('master'),
+				itemUser(12),
+				itemAuthorization(),
+				itemValidation()
 			]
 		}
 	]
