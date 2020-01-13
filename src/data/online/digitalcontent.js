@@ -9,9 +9,9 @@ export default {
 			summary: "Media Berbasis Konten Tekstual",
 			price: 350000,
 			examples: [
-				"Informasi Interaktif",
-                "Buku Digital",
-                "Kuis Pilihan Ganda"
+				"- Informasi Interaktif",
+                "- Buku Digital",
+                "- Kuis Pilihan Ganda"
 			],
 			items: [
 				itemDurasiPengerjaan(21)
@@ -22,9 +22,9 @@ export default {
 			summary: "Media Berbasis Grafis Bergerak",
 			price: 700000,
 			examples: [
-				"Puzzle",
-                "Konten Edukatif Sederhana",
-                "Tebak Gambar"
+				"- Puzzle",
+                "- Konten Edukatif Sederhana",
+                "- Tebak Gambar"
 			],
 			items: [
 				itemDurasiPengerjaan(30)
@@ -35,8 +35,8 @@ export default {
 			summary: "Media Berbasis Permainan Grafis Interaktif",
 			price: 1500000,
 			examples: [
-				"Endless Game",
-				"Arcade Game"
+				"- Endless Game",
+				"- Arcade Game"
 			],
 			items: [
 				itemDurasiPengerjaan(60)
@@ -47,8 +47,8 @@ export default {
 			summary: "Media Berbasis Dunia Petualangan",
 			price: 3000000,
 			examples: [
-				"Mario/Zelda-Like Games",
-                "Konten berbasis Petualangan"
+				"- Mario/Zelda-Like Games",
+                "- Konten berbasis Petualangan"
 			],
 			items: [
 				itemDurasiPengerjaan(120)
@@ -59,9 +59,9 @@ export default {
 			summary: "Media Berbasis Kekompakan/Multiplayer",
 			price: 10000000,
 			examples: [
-				"Racing Game",
-                "RPG",
-                "Game berbasis Multiplayer"
+				"- Racing Game",
+                "- RPG",
+                "- Game berbasis Multiplayer"
 			],
 			items: [
 				itemDurasiPengerjaan(180)

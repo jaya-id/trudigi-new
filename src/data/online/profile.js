@@ -9,9 +9,9 @@ export default {
 			summary: "Untuk Profile Individual",
 			price: 150000,
 			examples: [
-				"Freelancer",
-                "Indie",
-                "Developer"
+				"- Freelancer",
+                "- Indie",
+                "- Developer"
 			],
 			items: [
 				itemDurasiPengerjaan(15),
@@ -23,9 +23,9 @@ export default {
 			summary: "Untuk Profile Startup",
 			price: 300000,
 			examples: [
-				"Startup",
-                "Blogger",
-                "Enterpreneur"
+				"- Startup",
+                "- Blogger",
+                "- Enterpreneur"
 			],
 			items: [
 				itemDurasiPengerjaan(21),
@@ -37,8 +37,8 @@ export default {
 			summary: "Untuk Profil Lembaga dengan Pengelolaan Konten yang Sederhana",
 			price: 600000,
 			examples: [
-				"Organisasi Daerah",
-				"Perusahaan Kecil"
+				"- Organisasi Daerah",
+				"- Perusahaan Kecil"
 			],
 			items: [
 				itemDurasiPengerjaan(30),
@@ -50,10 +50,10 @@ export default {
 			summary: "Untuk Profil Perusahaan dengan Berbagai Jenis Konten",
 			price: 1500000,
 			examples: [
-				"Institusi",
-                "Sekolah",
-                "Kampus",
-                "Yayasan"
+				"- Institusi",
+                "- Sekolah",
+                "- Kampus",
+                "- Yayasan"
 			],
 			items: [
 				itemDurasiPengerjaan(60),
@@ -65,9 +65,9 @@ export default {
 			summary: "Untuk Profil Perusahaan Besar Memuat Statistik di Berbagai Jenis Konten",
 			price: 5000000,
 			examples: [
-				"Badan Statistik Daerah",
-                "Lembaga Pengembangan",
-                "Komunitas Besar"
+				"- Badan Statistik Daerah",
+                "- Lembaga Pengembangan",
+                "- Komunitas Besar"
 			],
 			items: [
 				itemDurasiPengerjaan(120),
