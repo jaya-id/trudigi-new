@@ -16,6 +16,19 @@ export default {
 				itemDurasiPengerjaan(21),
 				itemDurasiRevisi(7),
 			]
+		},
+		{
+			name: "Giant",
+			summary: "Sistem untuk Volume Komunitas dan Skala Besar",
+			price: 10000000,
+			examples: [
+				"Sistem Kasir",
+				"Sistem Rekap Pribadi"
+			],
+			items: [
+				itemDurasiPengerjaan(120),
+				itemDurasiRevisi(60),
+			]
 		}
 	]
 }
