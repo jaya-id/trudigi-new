@@ -1,6 +1,7 @@
+
 import {
-	itemDurasiPengerjaan,
-	itemDurasiRevisi,
+	itemWorkDuration,
+	itemRevisionPeriod,
 	itemSecurityPatch,
 	itemCRUD,
 	itemCP,
@@ -22,8 +23,8 @@ export default {
                 "- Developer"
 			],
 			items: [
-				itemDurasiPengerjaan(15),
-				itemDurasiRevisi(3),
+				itemWorkDuration(15),
+				itemRevisionPeriod(3),
 				itemCP(1),
 				itemType('single')
 			]
@@ -38,8 +39,8 @@ export default {
                 "- Enterpreneur"
 			],
 			items: [
-				itemDurasiPengerjaan(21),
-				itemDurasiRevisi(7),
+				itemWorkDuration(21),
+				itemRevisionPeriod(7),
 				itemCP(5),
 				itemType('single'),
 				itemPostType('simple')
@@ -54,8 +55,8 @@ export default {
 				"- Perusahaan Kecil"
 			],
 			items: [
-				itemDurasiPengerjaan(30),
-				itemDurasiRevisi(10),
+				itemWorkDuration(30),
+				itemRevisionPeriod(10),
 				itemCP(10),
 				itemType('single'),
 				itemCRUD(3),
@@ -73,8 +74,8 @@ export default {
                 "- Yayasan"
 			],
 			items: [
-				itemDurasiPengerjaan(60),
-				itemDurasiRevisi(15),
+				itemWorkDuration(60),
+				itemRevisionPeriod(15),
 				itemSecurityPatch(30),
 				itemCP(20),
 				itemType('double'),
@@ -92,8 +93,9 @@ export default {
                 "- Komunitas Besar"
 			],
 			items: [
-				itemDurasiPengerjaan(120),
-				itemDurasiRevisi(60),
+
+				itemWorkDuration(120),
+				itemRevisionPeriod(60),
 				itemSecurityPatch(90),
 				itemCP(30),
 				itemType('triple'),

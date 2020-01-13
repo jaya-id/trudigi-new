@@ -1,13 +1,20 @@
 import {
-	itemDurasiPengerjaan,
-	itemDurasiRevisi,
-	itemSecurityPatch,
-	itemCRUD,
-	itemAdmin,
-	itemUser,
-	itemAuthorization,
-	itemValidation
-} from './shared'
+	itemWorkDuration,
+	itemRevisionPeriod,
+	onlineSecurityPatch,
+	onlineCRUD,
+	systemAdminKind,
+	systemUserKind,
+	systemAuthorization,
+	systemValidation,
+	systemStatistics,
+	systemEmailSubscription,
+	systemDataImportExport,
+	systemDesktopMobileApp,
+	systemSocialLogin,
+	systemRestAPI,
+	systemBacklog
+} from '../shared'
 
 export default {
 	title: "Online System",
@@ -22,9 +29,10 @@ export default {
 				"- Sistem Rekap Pribadi"
 			],
 			items: [
-				itemDurasiPengerjaan(21),
-				itemDurasiRevisi(7),
-				itemAdmin('single')
+				itemWorkDuration(21),
+				itemRevisionPeriod(7),
+				onlineCRUD(3),
+				systemAdminKind('single'),
 			]
 		},
 		{
@@ -36,11 +44,11 @@ export default {
 				"- Sistem Pendaftaran"
 			],
 			items: [
-				itemDurasiPengerjaan(30),
-				itemDurasiRevisi(10),
-				itemCRUD(3),
-				itemAdmin('admin'),
-				itemUser(1),
+				itemWorkDuration(30),
+				itemRevisionPeriod(10),
+				onlineCRUD(5),
+				systemAdminKind('admin'),
+				systemUserKind(1),
 			]
 		},
 		{
@@ -52,14 +60,14 @@ export default {
 				"- Sistem Moderasi Akun"
 			],
 			items: [
-				itemDurasiPengerjaan(30),
-				itemDurasiRevisi(10),
-				itemSecurityPatch(30),
-				itemCRUD(7),
-				itemAdmin('master'),
-				itemUser(3),
-				itemAuthorization(),
-				itemValidation()
+				itemWorkDuration(60),
+				itemRevisionPeriod(15),
+				onlineSecurityPatch(30),
+				onlineCRUD(7),
+				systemAdminKind('master'),
+				systemUserKind(3),
+				systemAuthorization(),
+				systemValidation()
 			]
 		},
 		{
@@ -71,14 +79,17 @@ export default {
 				"- Sistem Manajemen Surat"
 			],
 			items: [
-				itemDurasiPengerjaan(90),
-				itemDurasiRevisi(30),
-				itemSecurityPatch(90),
-				itemCRUD(15),
-				itemAdmin('master'),
-				itemUser(6),
-				itemAuthorization(),
-				itemValidation()
+				itemWorkDuration(90),
+				itemRevisionPeriod(30),
+				onlineSecurityPatch(90),
+				onlineCRUD(15),
+				systemAdminKind('master'),
+				systemUserKind(6),
+				systemAuthorization(),
+				systemValidation(),
+				systemStatistics(),
+				systemEmailSubscription(),
+				systemDataImportExport(),
 			]
 		},
 		{
@@ -90,14 +101,21 @@ export default {
 				"- Sistem Rekap Pribadi"
 			],
 			items: [
-				itemDurasiPengerjaan(120),
-				itemDurasiRevisi(60),
-				itemSecurityPatch(180),
-				itemCRUD(30),
-				itemAdmin('master'),
-				itemUser(12),
-				itemAuthorization(),
-				itemValidation()
+				itemWorkDuration(120),
+				itemRevisionPeriod(60),
+				onlineSecurityPatch(180),
+				onlineCRUD(30),
+				systemAdminKind('master'),
+				systemUserKind(12),
+				systemAuthorization(),
+				systemValidation(),
+				systemStatistics(),
+				systemEmailSubscription(),
+				systemDataImportExport(),
+				systemDesktopMobileApp(),
+				systemSocialLogin(),
+				systemRestAPI(),
+				systemBacklog()
 			]
 		}
 	]
