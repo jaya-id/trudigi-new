@@ -1,3 +1,11 @@
 import React from "react"
+import Layout from "../components/layout"
+import Summary from '../components/summary'
 
-export default () => <div>Contact</div>
+export default () => (
+<Layout>
+	<Summary>
+
+	</Summary>
+</Layout>
+);

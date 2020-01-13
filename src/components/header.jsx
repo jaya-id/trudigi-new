@@ -17,20 +17,25 @@ export default () => (
 				<a class="nav-link" href="/">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/showcase/">Showcase</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/contact/">Contact</a>
+				<a class="nav-link" href="/showcase/">Galeri</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle"  href="/products/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Products
+				Produk
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item" href="/products/">Action</a>
-				<a class="dropdown-item" href="/products/">Another action</a>
-				<a class="dropdown-item" href="/products/">Something else here</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="/products/">Semua Produk</a>
+				<div class="dropdown-divider"/>
+				<a class="dropdown-item" href="/online/profile">Online Profile</a>
+				<a class="dropdown-item" href="/online/system">Online System</a>
+				<a class="dropdown-item" href="/online/commerce">Online Commerce</a>
+				<div class="dropdown-divider"/>
+				<a class="dropdown-item" href="/digital/content">Digital Content</a>
+				<a class="dropdown-item" href="/digital/graphics">Digital Graphics</a>
 				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/contact/">Kontak</a>
 			</li>
 			</ul>
 		</div>
