@@ -2,45 +2,45 @@ const itemWorkDuration = (days) => ({
 	title: `Durasi Pengerjaan ${days} Hari`,
 	description: `Durasi Pengerjaan untuk menyelesaikan pemesanan yakni sekitar ${days} hari dihitung sejak detail pengerjaan kami terima`,
 	notes: '',
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const itemRevisionPeriod = (days) => ({
 	title: `Masa Revisi ${days} Hari`,
-	description: `Kami memberikan kesempatan revisi hingga ${days} hari dihitung setelah durasi pengerjaan. Kami menerima perbaikan pengerjaan selama tidak mengubah struktur pemesanan awal`,
-	notes: 'Berikutnya Rp 100.000 jika perlu tambahan durasi revisi selama 15 Hari',
-	img: "/images/template.jpg",
+	description: `Periode untuk perbaikan pemesanan (revisi) adalah hingga ${days} hari dihitung setelah durasi pengerjaan`,
+	notes: 'Kami menerima perbaikan pengerjaan selama tidak mengubah struktur pemesanan awal',
+	img: "/images/placeholder.png",
 })
 
 const onlineSecurityPatch = (days) => ({
 	title: `Garansi Maintenance ${days} Hari`,
 	description: `Jika anda menemukan masalah/bug dalam sistem, kami memberikan garansi perbaikan gratis selama ${days} hari dihitung setelah durasi revisi selesai`,
 	notes: 'Berikutnya Rp 50.000 jika perlu tambahan durasi maintenance selama 15 Hari',
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const onlineCRUD = (items) => ({
 	title: `${items} Data CRUD`,
-	description: `Kerumitan sistem pada dasarnya ialah dari berapa operasi CRUD (Create-Read-Update-Delete) yang dapat diatur dalam sistem. Kami memberikan jumlah CRUD yang fleksibel hingga ${items} jenis data dalam sistem`,
+	description: `Website dinamis menyediakan panel Admin untuk mengatur hingga ${items} jenis data (termasuk galeri, agenda, biodata, navigasi atau data lainnya) yang menggunakan prinsip CRUD`,
 	notes: 'Berikutnya Rp 100.000 untuk setiap tambahan CRUD',
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemAdminKind = (kind) => ({
 	single: {
 		title: `Satu Akun`,
 		description: `Sistem `,
-		img: "/images/template.jpg",
+		img: "/images/placeholder.png",
 	},
 	admin: {
 		title: `Satu Admin, Banyak User`,
 		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
+		img: "/images/placeholder.png",
 	},
 	master: {
 		title: `Satu Master Akun, Banyak Jenis User`,
 		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
+		img: "/images/placeholder.png",
 	},
 }[kind])
 
@@ -48,106 +48,94 @@ const systemUserKind = (types) => ({
 	title: `${types} Jenis User`,
 	description: `Lorem Ipsum`,
 	notes: 'Berikutnya Rp 250.000 untuk setiap tambahan Jenis User',
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemAuthorization = () => ({
 	title: `Sistem Autorisasi Data`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemValidation = () => ({
 	title: `Sistem Validasi Input`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemStatistics = () => ({
 	title: `Statistik dan Laporan`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemEmailSubscription = () => ({
 	title: `Sistem Notifikasi Email`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemDataImportExport = () => ({
 	title: `Data Impor dan Ekspor`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemDesktopMobileApp = () => ({
 	title: `Aplikasi Desktop / Mobile`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemSocialLogin = () => ({
 	title: `Login Pihak Ketiga`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemRestAPI = () => ({
 	title: `REST API + GraphQL`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 const systemBacklog = () => ({
 	title: `Backlog / Emergency System`,
 	description: `Lorem Ipsum`,
-	img: "/images/template.jpg",
+	img: "/images/placeholder.png",
 })
 
 
 
 const profileCustomPages = (items) => ({
-	title: `Up To ${items} Custome Pages`,
-	description: `lorem ipsum`,
-	notes: `Berikutnya Rp 50.000 untuk setiap tambahan Custom Pages`,
-	img: "/images/template.jpg",
+	title: `${items} Halaman Kustom`,
+	description: `Halaman Kustom dapat berisi konten tertentu dengan desain yang unik dan berbeda`,
+	notes: items === 1 ? `` : `Berikutnya Rp 50.000 untuk setiap tambahan Halaman Kustom`,
+	img: "/images/placeholder.png",
 })
 
 
-const profileType = (kind) => ({
-	single: {
-		title: `Bootstrap`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-	double: {
-		title: `Bootstrap + React`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-	triple: {
-		title: `Bootstrap + React + PWA`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
-	},
-}[kind])
+const profileMulti = () => ({
+	title: `Multi Akun dan Multi Webite`,
+	description: `Website dapat dikelola oleh lebih dari satu akun dan dapat memiliki cabang web (subdomain) yang terpisah`,
+	img: "/images/placeholder.png",
+})
 
 const profilePostType = (kind) => ({
-	simple: {
-		title: `Simple Post`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
+	post: {
+		title: `Sistem Posting`,
+		description: `Website dengan sebuah sistem posting memuat artikel, memo, galeri, artwork atau bahan lainnya`,
+		img: "/images/placeholder.png",
 	},
-	normal: {
-		title: `Post + Pages + Images`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
+	multi: {
+		title: `Sistem Posting Rangkap`,
+		description: `Website mempunyai lebih dari satu sistem posting untuk memuat kombinasi antara artikel, memo, galeri, artwork dan bahan lainnya`,
+		img: "/images/placeholder.png",
 	},
 	complete: {
-		title: `Post + Pages + Galery + Custom + Tags + Categorization`,
-		description: `Lorem Ipsum`,
-		img: "/images/template.jpg",
+		title: `Sistem Posting Rangkap dan Terindeks`,
+		description: `Website mempunyai Lebih dari satu sistem posting untuk memuat kombinasi antara artikel, memo, galeri, artwork dan bahan lainnya serta terindeks, sehingga dapat dipilah, dicari maupun dipisah ke banyak halaman`,
+		img: "/images/placeholder.png",
 	},
 }[kind])
 
@@ -169,6 +157,6 @@ export {
 	systemRestAPI,
 	systemBacklog,
 	profileCustomPages,
-	profileType,
+	profileMulti,
 	profilePostType
 }

@@ -5,7 +5,6 @@ import {
 	onlineSecurityPatch,
 	onlineCRUD,
 	profileCustomPages,
-	profileType,
 	profilePostType
 } from '../shared'
 
@@ -26,7 +25,6 @@ export default {
 				itemWorkDuration(15),
 				itemRevisionPeriod(3),
 				profileCustomPages(1),
-				profileType('single')
 			]
 		},
 		{
@@ -42,7 +40,6 @@ export default {
 				itemWorkDuration(21),
 				itemRevisionPeriod(7),
 				profileCustomPages(5),
-				profileType('single'),
 				profilePostType('simple')
 			]
 		},
@@ -58,7 +55,6 @@ export default {
 				itemWorkDuration(30),
 				itemRevisionPeriod(10),
 				profileCustomPages(10),
-				profileType('single'),
 				onlineCRUD(3),
 				profilePostType('normal')
 			]
@@ -78,7 +74,6 @@ export default {
 				itemRevisionPeriod(15),
 				onlineSecurityPatch(30),
 				profileCustomPages(20),
-				profileType('double'),
 				onlineCRUD(5),
 				profilePostType('complete')
 			]
@@ -98,7 +93,6 @@ export default {
 				itemRevisionPeriod(60),
 				onlineSecurityPatch(90),
 				profileCustomPages(30),
-				profileType('triple'),
 				onlineCRUD(10),
 				profilePostType('complete')
 			]

@@ -25,8 +25,8 @@ export default {
 			summary: "Sistem untuk Menyimpan Data Sederhana",
 			price: 300000,
 			examples: [
-				"- Sistem Kasir",
-				"- Sistem Rekap Pribadi"
+				"Sistem Kasir",
+				"Sistem Rekap Pribadi"
 			],
 			items: [
 				itemWorkDuration(21),
@@ -40,8 +40,8 @@ export default {
 			summary: "Sistem untuk Komunikasi dengan Pengguna",
 			price: 600000,
 			examples: [
-				"- Sistem Peminjaman Barang -",
-				"- Sistem Pendaftaran"
+				"Sistem Peminjaman Barang -",
+				"Sistem Pendaftaran"
 			],
 			items: [
 				itemWorkDuration(30),
@@ -56,8 +56,8 @@ export default {
 			summary: "Sistem untuk Komunikasi antar Pengguna",
 			price: 1500000,
 			examples: [
-				"- Sistem Rekap Nilai -",
-				"- Sistem Moderasi Akun"
+				"Sistem Rekap Nilai -",
+				"Sistem Moderasi Akun"
 			],
 			items: [
 				itemWorkDuration(60),
@@ -75,8 +75,8 @@ export default {
 			summary: "Sistem untuk Membangun Data dan Komunikasi dalam Jaringan Bisnis",
 			price: 4000000,
 			examples: [
-				"- Sistem Audit",
-				"- Sistem Manajemen Surat"
+				"Sistem Audit",
+				"Sistem Manajemen Surat"
 			],
 			items: [
 				itemWorkDuration(90),
@@ -97,8 +97,8 @@ export default {
 			summary: "Sistem untuk Volume Komunitas dan Skala Besar",
 			price: 10000000,
 			examples: [
-				"- Sistem Kasir",
-				"- Sistem Rekap Pribadi"
+				"Sistem Kasir",
+				"Sistem Rekap Pribadi"
 			],
 			items: [
 				itemWorkDuration(120),

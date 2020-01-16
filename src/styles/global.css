@@ -32,3 +32,17 @@
 .nav-link{
 	color:black;
 }
+.purchase-hero {
+	position: relative;
+	background: linear-gradient(#fffd, white);
+}
+.purchase-hero::before {
+	content: '';
+	background: var(--background) center/cover;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+	right: 0;
+	z-index: -1;
+}
