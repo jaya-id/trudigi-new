@@ -50,7 +50,7 @@ export default ({ data, theme, background }) => {
 			<div className="row justify-content-center">
 			{
 				model.examples.map(y => (
-					<div key={y.title} className="col-md-6 col-xl-3">
+					<div key={y.title} className="col-md-6">
 						<img src={y.image} alt="" className="w-100"/>
 						<small className="d-block text-muted text-center mt-2">{y.title}</small>
 					</div>
@@ -70,13 +70,26 @@ export default ({ data, theme, background }) => {
 		}
 		<Summary>
 		<h2 className={`text-${theme}`}>Benefit Lainnya</h2>
-		<div className="my-5">
+		<div className="row my-5 justify-content-center">
 		{
 			(model.promises || []).map((mod) => (
-			<>
+			<div className="col-lg-6 py-3">
 			<h4>{mod.title}</h4>
 			<p className="text-muted">{mod.description}</p>
-			</>
+			</div>
+			))
+		}
+		</div>
+		</Summary>
+		<Summary>
+		<h2 className={`text-${theme}`}>Opsi Teknologi yang dapat Dipakai</h2>
+		<div className="my-5 row justify-content-center">
+		{
+			(model.technologies || []).map((mod) => (
+			<div className="col-md-6 col-xl-3 py-3">
+			<h5>{mod.title}</h5>
+			<small className="text-muted">{mod.description}</small>
+			</div>
 			))
 		}
 		</div>

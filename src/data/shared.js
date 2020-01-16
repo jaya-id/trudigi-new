@@ -139,7 +139,11 @@ const profilePostType = (kind) => ({
 	},
 }[kind])
 
-
+const profileStatistics = () => ({
+	title: `Statistik Data`,
+	description: `Website menyediakan rangkuman publik ditampilkan melalui format diagram ataupun listing yang dapat diekspor ke format Excel atau PDF`,
+	img: "/images/placeholder.png",
+})
 export {
 	itemWorkDuration,
 	itemRevisionPeriod,
@@ -158,5 +162,6 @@ export {
 	systemBacklog,
 	profileCustomPages,
 	profileMulti,
-	profilePostType
+	profilePostType,
+	profileStatistics,
 }
