@@ -1,96 +1,16 @@
 
-import {
-	itemWorkDuration,
-	itemRevisionPeriod,
-	onlineSecurityPatch,
-	onlineCRUD,
-	profileCustomPages,
-	profileMulti,
-	profilePostType,
-	profileStatistics
-} from '../shared'
+import items from '../shared/items'
 
-const promises = {
-	sourceCode: {
-		title: "Source Code",
-		description: "Kami bagikan file mentahan yang bisa diedit untuk jangka panjang",
-	},
-	responsive: {
-		title: "Responsive",
-		description: "Layout sesuai untuk ditampilkan di desktop maupun smartphone",
-	},
-	seo: {
-		title: "SEO Optimized",
-		description: "Website memenuhi persyaratan agar terangking baik di Google",
-	},
-	static: {
-		title: "Website Statis",
-		description: "Website tanpa back-end sehingga bisa langsung dipasang tanpa membeli hosting"
-	},
-	dynamic: {
-		title: "Website Dinamis",
-		description: "Website dengan backend untuk manajemen konten yang lebih praktis"
-	},
-	security: {
-		title: "Standar Keamanan Tinggi",
-		description: "Back-end dijamin bebas dari serangan DOS, XSS dan SQL Injection",
-	},
-}
+import promises from '../shared/promises'
 
-const technologies = {
-	html5: {
-		title: "HTML5",
-		description: "Kami menggunakan spesifikasi HTML terbaru (native tanpa plugin) untuk interaksi yang cepat, modern dan relevan"
-	},
-	bootstrap: {
-		title: "Bootstrap",
-		description: "Bootstrap adalah framework yang memungkinkan tampilan responsif dan mudah beradaptasi untuk desktop maupun mobile"
-	},
-	createReactApp: {
-		title: "Create React App",
-		description: "Create React App memungkinkan penggunaan React, framework front-end untuk interaksi website statis satu halaman yang kompleks"
-	},
-	gatsby: {
-		title: "Gatsby.JS",
-		description: "Gatsby.JS memungkinkan penggunaan React, framework front-end untuk interaksi website statis multi halaman yang kompleks"
-	},
-	jekyll: {
-		title: "Jekyll",
-		description: "Jekyll adalah Content Site Generator yang digunakan untuk membangun website statis (tanpa backend) dan kompatibel dengan layanan hosting statis seperti GitHub Pages"
-	},
-	codeIgniter: {
-		title: "CodeIgniter",
-		description: "CodeIgniter adalah Framework Backend berbasis PHP popular yang ringan serta mudah untuk dikostumisasi dan dikelola"
-	},
-	mySql: {
-		title: "MySQL",
-		description: "MySQL adalah server yang sangat popular untuk menyimpan data relasional, dan biasanya sepaket dengan pembelian hosting PHP"
-	},
-	googleAnalytics: {
-		title: "Google Analytics",
-		description: "Google Analytics adalah tracking service gratis dan dapat dipasang disetiap halaman untuk mengukur traffic website secara kumulatif maupun realtime"
-	},
-	disqus: {
-		title: "Disqus",
-		description: "Disqus adalah platform gratis untuk menambahkan bagian comment pada tiap posting"
-	},
-	cloudflare: {
-		title: "Cloudflare",
-		description: "Setelah anda membeli hosting, anda dapat mem-proxy server ke layanan Cloudflare untuk Optimasi Cache, HTTPS dan proteksi dari DDOS secara gratis"
-	},
-	mailchimp: {
-		title: "Mailchimp",
-		description: "Mailchimp adalah layanan email marketing gratis (dengan batasan) yang bisa digunakan untuk mengirim email kepada subscriber tentang konten baru dalam website"
-	},
-	laravel: {
-		title: "Laravel",
-		description: "Laravel adalah Framework PHP Modern yang lebih modular dan biasa dipakai jika website juga membutuhkan interaksi Front-end Framework seperti React"
-	}
-}
+import technologies from '../shared/technologies'
 
 export default {
 	title: "Online Profile",
 	summary: "Kami melayasi jasa pembuatan Website untuk Profil individu maupun Instansi dengan desain modern sesuai dengan budget dan kebutuhan anda.",
+	background: "/images/template.jpg",
+	url: "/online/profile",
+	theme: "primary",
 	models: [
 		{
 			name: "Minimalis",
@@ -102,14 +22,14 @@ export default {
 					image: "/images/placeholder.png"
 				},
 				{
-					title: "Halaman Landing (satu halaman)",
+					title: "Landing Page (satu halaman)",
 					image: "/images/placeholder.png"
 				}
 			],
 			items: [
-				itemWorkDuration(15),
-				itemRevisionPeriod(5),
-				profileCustomPages(1),
+				items.itemWorkDuration(15),
+				items.itemRevisionPeriod(5),
+				items.profileCustomPages(1),
 			],
 			promises: [
 				promises.static,
@@ -144,10 +64,10 @@ export default {
 				}
 			],
 			items: [
-				itemWorkDuration(21),
-				itemRevisionPeriod(10),
-				profileCustomPages(5),
-				profilePostType('post')
+				items.itemWorkDuration(21),
+				items.itemRevisionPeriod(10),
+				items.profileCustomPages(5),
+				items.profilePostType('post')
 			],
 			promises: [
 				promises.static,
@@ -179,11 +99,11 @@ export default {
 				}
 			],
 			items: [
-				itemWorkDuration(35),
-				itemRevisionPeriod(15),
-				profileCustomPages(10),
-				onlineCRUD(5),
-				profilePostType('multi')
+				items.itemWorkDuration(35),
+				items.itemRevisionPeriod(15),
+				items.profileCustomPages(10),
+				items.onlineCRUD(5),
+				items.profilePostType('multi')
 			],
 			promises: [
 				promises.dynamic,
@@ -217,13 +137,13 @@ export default {
 				}
 			],
 			items: [
-				itemWorkDuration(75),
-				itemRevisionPeriod(30),
-				onlineSecurityPatch(90),
-				profileCustomPages(25),
-				onlineCRUD(15),
-				profilePostType('complete'),
-				profileMulti(),
+				items.itemWorkDuration(75),
+				items.itemRevisionPeriod(30),
+				items.onlineSecurityPatch(90),
+				items.profileCustomPages(25),
+				items.onlineCRUD(15),
+				items.profilePostType('complete'),
+				items.profileMulti(),
 			],
 			promises: [
 				promises.dynamic,
@@ -246,26 +166,26 @@ export default {
 		{
 			name: "Forensik",
 			summary: "Untuk profil memuat data dan analisa yang bisa dikonsumsi oleh publik",
-			price: 6000000,
+			price: 4800000,
 			examples: [
 				{
 					title: "Badan Statistik",
 					image: "/images/placeholder.png"
 				},
 				{
-					title: "Web Audit atau Analisa Publik",
+					title: "Web Layanan Publik",
 					image: "/images/placeholder.png"
 				}
 			],
 			items: [
-				itemWorkDuration(120),
-				itemRevisionPeriod(60),
-				onlineSecurityPatch(180),
-				profileCustomPages(40),
-				onlineCRUD(30),
-				profilePostType('complete'),
-				profileMulti(),
-				profileStatistics(),
+				items.itemWorkDuration(120),
+				items.itemRevisionPeriod(60),
+				items.onlineSecurityPatch(180),
+				items.profileCustomPages(40),
+				items.onlineCRUD(30),
+				items.profilePostType('complete'),
+				items.profileMulti(),
+				items.profileStatistics(),
 			],
 			promises: [
 				promises.dynamic,

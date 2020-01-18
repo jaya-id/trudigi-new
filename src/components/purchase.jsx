@@ -3,12 +3,17 @@ import Summary from "./summary"
 import Layout from "./layout"
 import Hero from "./hero"
 
-export default ({ data, theme, background }) => {
-	theme = theme || 'primary';
+export default ({ data }) => {
 	const [level, setLevel] = useState(0);
 	const model = data.models[level];
-	return <Layout>
-		<div className="purchase-hero" style={{'--background': `url(${background})`}}>
+	const theme = data.theme || 'primary'
+	return <Layout seo={{
+		title: data.title,
+		description: data.summary,
+		image: data.background,
+		url: data.url
+	}}>
+		<div className="purchase-hero" style={{'--background': `url(${data.background})`}}>
 		<Summary>
 			<h1 className={`text-${theme}`}>{data.title}</h1>
 			<p>{data.summary}</p>
@@ -16,7 +21,7 @@ export default ({ data, theme, background }) => {
 		</div>
 		<Summary>
 			<p>Pilih Jenis Paket&nbsp;:</p>
-			<div className="btn-group mr-2" role="group" aria-label="First group">
+			<div className="btn-group flex-wrap mr-2" role="group" aria-label="First group">
 				{
 					data.models.map((v, i) => (
 						<button className={`btn btn-outline-${theme} ${i === level ? 'active' : ''}`} key={v.name}
@@ -42,7 +47,7 @@ export default ({ data, theme, background }) => {
 					style: 'currency',
 					currency: 'IDR',
 				})}</b></span>
-				<button className={`ml-2 btn btn-${theme}`}>Pesan Sekarang</button>
+				<button className={`ml-2 d-none d-md-block btn btn-${theme}`}>Pesan Sekarang</button>
 			</div>
 		</div>
 		<Summary>

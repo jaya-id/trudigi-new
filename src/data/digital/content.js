@@ -1,4 +1,4 @@
-import {itemWorkDuration} from '../shared'
+import items from '../shared/items'
 
 export default {
 	title: "DIGITAL CONTENT",
@@ -14,7 +14,7 @@ export default {
                 "- Kuis Pilihan Ganda"
 			],
 			items: [
-				itemWorkDuration(21)
+				items.itemWorkDuration(21)
 			]
 		},
 		{
@@ -27,7 +27,7 @@ export default {
                 "- Tebak Gambar"
 			],
 			items: [
-				itemWorkDuration(30)
+				items.itemWorkDuration(30)
 			]
 		},
 		{
@@ -39,7 +39,7 @@ export default {
 				"- Arcade Game"
 			],
 			items: [
-				itemWorkDuration(60)
+				items.itemWorkDuration(60)
 			]
 		},
 		{
@@ -51,7 +51,7 @@ export default {
                 "- Konten berbasis Petualangan"
 			],
 			items: [
-				itemWorkDuration(120)
+				items.itemWorkDuration(120)
 			]
 		},
 		{
@@ -64,7 +64,7 @@ export default {
                 "- Game berbasis Multiplayer"
 			],
 			items: [
-				itemWorkDuration(180)
+				items.itemWorkDuration(180)
 			]
 		}
 	]

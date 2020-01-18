@@ -17,8 +17,9 @@ module.exports = {
           include: path.resolve(__dirname, 'src')
         }
       }
-    }
-  ]
+    },
+    `gatsby-plugin-react-helmet`
+  ],
 }
 
 exports.onCreateWebpackConfig = ({ getConfig, stage, actions }) => {

@@ -4,7 +4,10 @@ import Hero from '../components/hero'
 import Summary from '../components/summary'
 import Logo from '../media/brandLong.svg'
 export default () => (
-	<Layout>
+	<Layout seo={{
+		title: "TRUDIGI",
+		description: "Di TRUDIGI Kami Memberikan Layanan Profesional untuk Solusi Digital Bisnis Anda",
+	}}>
 		<Summary>
 			<h1><Logo width="100%"/></h1>
 			<p>Di TRUDIGI Kami Memberikan Layanan Profesional untuk Solusi Digital Bisnis Anda</p>

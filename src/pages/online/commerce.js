@@ -2,4 +2,4 @@ import React from "react"
 import Purchase from "../../components/purchase"
 import Data from '../../data/online/commerce'
 
-export default () => <Purchase data={Data} theme="warning"/>
+export default () => <Purchase data={Data}/>
