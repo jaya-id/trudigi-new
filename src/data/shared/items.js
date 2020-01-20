@@ -76,6 +76,11 @@ export default {
 		description: `Lorem Ipsum`,
 		img: "/images/placeholder.png",
 	}),
+	systemDesktopMobileAppIYW: () => ({
+		title: `Aplikasi Desktop / Mobile`,
+		description: `- Desktop : Rp 800.000 / Apps <> - Mobile : Rp 1.200.009`,
+		img: "/images/placeholder.png",
+	}),
 	systemSocialLogin: () => ({
 		title: `Login Pihak Ketiga`,
 		description: `Lorem Ipsum`,

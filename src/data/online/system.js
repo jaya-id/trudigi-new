@@ -12,8 +12,8 @@ export default {
 	theme: "danger",
 	models: [
 		{
-			name: "Mini",
-			summary: "Sistem untuk Menyimpan Data Pribadi",
+			name: "Private",
+			summary: "Aplikasi Untuk Menyimpan Data Pribadi",
 			price: 300000,
 			examples: [
 				{
@@ -44,17 +44,17 @@ export default {
 			],
 		},
 		{
-			name: "Regular",
+			name: "Mini",
 			summary: "Sistem untuk Komunikasi dengan Pengguna",
-			price: 600000,
+			price: 700000,
 			examples: [
 				{
-					title: "Aplikasi Order atau Membership",
+					title: "Aplikasi Membership",
 					image: "/images/placeholder.png"
 				}, {
-					title: "Aplikasi Rental dan Peminjaman",
+					title: "Aplikasi Pendaftaran",
 					image: "/images/placeholder.png"
-				}
+				},
 			],
 			items: [
 				items.itemWorkDuration(30),
@@ -62,6 +62,7 @@ export default {
 				items.onlineCRUD(5),
 				items.systemAdminKind('admin'),
 				items.systemUserKind(1),
+				items.systemValidation()
 			],
 			promises: [
 				promises.dynamic,
@@ -73,14 +74,13 @@ export default {
 				technologies.html5,
 				technologies.bootstrap,
 				technologies.codeIgniter,
-				technologies.laravel,
 				technologies.mySql,
 			],
 		},
 		{
-			name: "Complex",
+			name: "Internal",
 			summary: "Sistem untuk Komunikasi antar Pengguna",
-			price: 1500000,
+			price: 1600000,
 			examples: [
 				{
 					title: "Sistem Rekap Nilai",
@@ -94,30 +94,36 @@ export default {
 				items.itemWorkDuration(60),
 				items.itemRevisionPeriod(15),
 				items.onlineSecurityPatch(30),
-				items.onlineCRUD(10),
+				items.onlineCRUD(15),
 				items.systemAdminKind('master'),
 				items.systemUserKind(3),
-				items.systemAuthorization(),
-				items.systemValidation()
+				items.systemValidation(),
+				items.systemDataImportExport(),
+				items.systemEmailSubscription(),
+				items.systemDesktopMobileAppIYW()
 			],
 			promises: [
 				promises.dynamic,
 				promises.sourceCode,
 				promises.responsive,
-				promises.security,
+				promises.security
 			],
 			technologies: [
 				technologies.html5,
 				technologies.bootstrap,
 				technologies.codeIgniter,
-				technologies.laravel,
 				technologies.mySql,
+				technologies.createReactApp,
+				technologies.laravel,
+				technologies.cloudflare,
+				technologies.googleAnalytics,
+				technologies.electron
 			],
 		},
 		{
-			name: "Super",
-			summary: "Sistem untuk Membangun Data dan Komunikasi dalam Jaringan Bisnis",
-			price: 4000000,
+			name: "Moderate",
+			summary: "Sistem untuk Membangun Data antar Pengguna",
+			price: 3200000,
 			examples: [
 				{
 					title: "Sistem Audit",
@@ -130,15 +136,62 @@ export default {
 			items: [
 				items.itemWorkDuration(90),
 				items.itemRevisionPeriod(30),
-				items.onlineSecurityPatch(90),
-				items.onlineCRUD(15),
+				items.onlineSecurityPatch(120),
+				items.onlineCRUD(30),
 				items.systemAdminKind('master'),
-				items.systemUserKind(6),
+				items.systemUserKind(5),
+				items.systemValidation(),
+				items.systemDataImportExport(),
+				items.systemEmailSubscription(),
+				items.systemDesktopMobileAppIYW()
+			],
+			promises: [
+				promises.dynamic,
+				promises.sourceCode,
+				promises.responsive,
+				promises.security
+			],
+			technologies: [
+				technologies.html5,
+				technologies.bootstrap,
+				technologies.codeIgniter,
+				technologies.mySql,
+				technologies.createReactApp,
+				technologies.laravel,
+				technologies.cloudflare,
+				technologies.googleAnalytics,
+				technologies.electron,
+				technologies.firebase,
+				technologies.flutter
+			],
+		},
+		{
+			name: "Citizen",
+			summary: "Platform Untuk Netizen Internet",
+			price: 9200000,
+			examples: [
+				{
+					title: "Sistem Pengelolaan Survey atau Statistik",
+					image: "/images/placeholder.png"
+				}, {
+					title: "Forum Internal",
+					image: "/images/placeholder.png"
+				}
+			],
+			items: [
+				items.itemWorkDuration(120),
+				items.itemRevisionPeriod(60),
+				items.onlineSecurityPatch(180),
+				items.onlineCRUD(45),
+				items.systemAdminKind('master'),
+				items.systemUserKind(7),
 				items.systemAuthorization(),
 				items.systemValidation(),
-				items.systemStatistics(),
-				items.systemEmailSubscription(),
 				items.systemDataImportExport(),
+				items.systemDesktopMobileApp(),
+				items.systemEmailSubscription(),
+				items.systemSocialLogin(),
+				items.systemRestAPI(),
 			],
 			promises: [
 				promises.dynamic,
@@ -149,30 +202,38 @@ export default {
 			technologies: [
 				technologies.html5,
 				technologies.bootstrap,
-				technologies.codeIgniter,
+				technologies.laravel,
 				technologies.mySql,
+				technologies.createReactApp,
+				technologies.cloudflare,
+				technologies.googleAnalytics,
+				technologies.electron,
+				technologies.firebase,
+				technologies.flutter,
+				technologies.mailchimp
+
 			],
 		},
 		{
-			name: "Giant",
-			summary: "Sistem untuk Volume Komunitas dan Skala Besar",
-			price: 10000000,
+			name: "Enterprise",
+			summary: "Platform Untuk Bisnis dalam Internet",
+			price: 24800000,
 			examples: [
 				{
-					title: "Sistem Pengelolaan Survey / Statistik",
+					title: "Sistem Audit",
 					image: "/images/placeholder.png"
 				}, {
-					title: "Form Internal",
+					title: "Sistem Manajemen Surat",
 					image: "/images/placeholder.png"
 				}
 			],
 			items: [
-				items.itemWorkDuration(120),
-				items.itemRevisionPeriod(60),
-				items.onlineSecurityPatch(180),
-				items.onlineCRUD(30),
+				items.itemWorkDuration(240),
+				items.itemRevisionPeriod(120),
+				items.onlineSecurityPatch(360),
+				items.onlineCRUD(90),
 				items.systemAdminKind('master'),
-				items.systemUserKind(12),
+				items.systemUserKind(10),
 				items.systemAuthorization(),
 				items.systemValidation(),
 				items.systemStatistics(),
@@ -188,15 +249,20 @@ export default {
 				promises.sourceCode,
 				promises.responsive,
 				promises.security,
-				promises.seo,
-
 			],
 			technologies: [
 				technologies.html5,
 				technologies.bootstrap,
 				technologies.codeIgniter,
 				technologies.mySql,
-			],
+				technologies.createReactApp,
+				technologies.laravel,
+				technologies.cloudflare,
+				technologies.googleAnalytics,
+				technologies.electron,
+				technologies.firebase,
+				technologies.flutter
+			]
 		}
 	]
 }

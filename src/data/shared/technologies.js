@@ -7,6 +7,10 @@ export default {
 		title: "Bootstrap",
 		description: "Bootstrap adalah framework yang memungkinkan tampilan responsif dan mudah beradaptasi untuk desktop maupun mobile"
 	},
+	electron: {
+		title: "Electron",
+		description: "Lorem Ipsum"
+	},
 	createReactApp: {
 		title: "Create React App",
 		description: "Create React App memungkinkan penggunaan React, framework front-end untuk interaksi website statis satu halaman yang kompleks"
