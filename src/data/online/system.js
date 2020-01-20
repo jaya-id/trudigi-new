@@ -82,14 +82,19 @@ export default {
 			summary: "Sistem untuk Komunikasi antar Pengguna",
 			price: 1500000,
 			examples: [
-				"Sistem Rekap Nilai -",
-				"Sistem Moderasi Akun"
+				{
+					title: "Sistem Rekap Nilai",
+					image: "/images/placeholder.png"
+				}, {
+					title: "Sistem Moderasi Akun",
+					image: "/images/placeholder.png"
+				}
 			],
 			items: [
 				items.itemWorkDuration(60),
 				items.itemRevisionPeriod(15),
 				items.onlineSecurityPatch(30),
-				items.onlineCRUD(7),
+				items.onlineCRUD(10),
 				items.systemAdminKind('master'),
 				items.systemUserKind(3),
 				items.systemAuthorization(),
@@ -114,8 +119,13 @@ export default {
 			summary: "Sistem untuk Membangun Data dan Komunikasi dalam Jaringan Bisnis",
 			price: 4000000,
 			examples: [
-				"Sistem Audit",
-				"Sistem Manajemen Surat"
+				{
+					title: "Sistem Audit",
+					image: "/images/placeholder.png"
+				}, {
+					title: "Sistem Manajemen Surat",
+					image: "/images/placeholder.png"
+				}
 			],
 			items: [
 				items.itemWorkDuration(90),
@@ -148,8 +158,13 @@ export default {
 			summary: "Sistem untuk Volume Komunitas dan Skala Besar",
 			price: 10000000,
 			examples: [
-				"Sistem Kasir",
-				"Sistem Rekap Pribadi"
+				{
+					title: "Sistem Pengelolaan Survey / Statistik",
+					image: "/images/placeholder.png"
+				}, {
+					title: "Form Internal",
+					image: "/images/placeholder.png"
+				}
 			],
 			items: [
 				items.itemWorkDuration(120),
@@ -173,6 +188,8 @@ export default {
 				promises.sourceCode,
 				promises.responsive,
 				promises.security,
+				promises.seo,
+
 			],
 			technologies: [
 				technologies.html5,
