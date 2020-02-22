@@ -13,30 +13,24 @@ export default () => (
 		</button>
 		<div className="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul className="ml-auto navbar-nav">
-			<li className="nav-item active">
-				<a className="nav-link" href="/">Home</a>
-			</li>
-			<li className="nav-item">
-				<a className="nav-link" href="/showcase/">Galeri</a>
-			</li>
-			<li className="nav-item dropdown">
-				<a className="nav-link dropdown-toggle"  href="/products/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Produk
-				</a>
-				<div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-				<a className="dropdown-item" href="/products/">Semua Produk</a>
-				<div className="dropdown-divider"/>
-				<a className="dropdown-item" href="/online/profile">Online Profile</a>
-				<a className="dropdown-item" href="/online/system">Online System</a>
-				<a className="dropdown-item" href="/online/commerce">Online Commerce</a>
-				<div className="dropdown-divider"/>
-				<a className="dropdown-item" href="/digital/content">Digital Content</a>
-				<a className="dropdown-item" href="/digital/graphics">Digital Graphics</a>
-				</div>
-			</li>
-			<li className="nav-item">
-				<a className="nav-link" href="/contact/">Kontak</a>
-			</li>
+				<li className="nav-item active">
+					<a className="nav-link" href="/">Home</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/products/">Products</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/projects/">Projects</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/members/">Members</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/teams/">Teams</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="/about/">About</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
