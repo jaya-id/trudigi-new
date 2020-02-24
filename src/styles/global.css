@@ -32,6 +32,7 @@
 }
 .hero-img {
 	min-height: 400px;
+	background-size: cover;
 }
 .heroprofile {
 	min-height: 400px;
