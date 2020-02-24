@@ -1,20 +1,36 @@
 
 .hero {
-	min-height: 400px;
-	text-align: right;
+	min-height: 600px;
+	text-align: left;
+	padding-bottom: 10px;
 }
 .hero:not(.reverse):nth-child(odd), .row.reverse:nth-child(even) {
 	flex-direction: row-reverse;
-	text-align: left;
+	text-align: right;
 }
 .hero-content > * {
-	margin-top: 0.5em;
+	margin-top: 1em;
 	margin-bottom: 0.5em;
 }
-
+.hero-content-head > * {
+	margin-top: 5em;
+}
+.hero-summary{
+	background-size: 95%;
+	padding-bottom: 10px;
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.btn-primary{
+	border-radius: 20px;
+	padding: 5px 30px;
+	background: linear-gradient(-70deg,#0037FF,#0072FF);
+}
+.btn-primary:hover{
+	transition: all ease-in-out 0.5s;
+	color: black;
+}
 .hero-img {
-	background-size: cover;
-	background-position: center;
 	min-height: 400px;
 }
 .heroprofile {
@@ -45,4 +61,10 @@
     left: 0;
 	right: 0;
 	z-index: -1;
+}
+.product-content img{
+	width: 200px;
+}
+.product-content{
+	padding: 0 35px;
 }
