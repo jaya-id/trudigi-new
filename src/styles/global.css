@@ -1,4 +1,6 @@
-
+body{
+	font-family: 'Quicksand';
+}
 .hero {
 	min-height: 600px;
 	text-align: left;
