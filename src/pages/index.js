@@ -3,8 +3,13 @@ import Layout from "../components/layout"
 import Hero from '../components/hero'
 import Summary from '../components/summary'
 import HeroHead from '../components/herohead'
-import SumProduct from '../components/sumproduct'
-import Product from '../components/product'
+import Gridpack from '../components/gridpack'
+import Gridtile from '../components/gridtile'
+
+const products = require('../data/products').default
+const teams = require('../data/teams').default
+const projects = require('../data/projects').default
+
 export default () => (
 	<Layout seo={{
 		title: "TRUDIGI",
@@ -22,29 +27,33 @@ export default () => (
 			<h2>Tentang</h2>
 			<p>TRUDIGI Berkomitmen untuk menciptakan Solusi Digital berkualitas yang menarik, fungsional dan berkualitas tinggi</p>
 		</Hero>
-		<SumProduct>
-			<Product>
-				<img src="/images/icon trudigi-01.svg" alt=""></img>
-				<h5>Aplikasi Web</h5>
-			</Product>
-			<Product>
-				<img src="/images/icon trudigi-02.svg" alt=""></img>
-				<h5>Graphic Design</h5>
-			</Product>
-			<Product>
-				<img src="/images/icon trudigi-03.svg" alt=""></img>
-				<h5>E-Commerce</h5>
-			</Product>
-			<Product>
-				<img src="/images/icon trudigi-04.svg" alt=""></img>
-				<h5>Video</h5>
-			</Product>
-		</SumProduct>
-		<Summary>
-			<h1>Showcase</h1>
-		</Summary>
-		<Summary>
-			<h1>Teams</h1>
-		</Summary>
+		<Gridpack title="Products">
+			{
+				Object.entries(products).map(([k, v]) => (
+				<Gridtile href={`/s/${k}`} key={k}>
+					<img class="thumb" src={`/images/products-icon/${k}.svg`} alt=""></img>
+					<h5>{v.title}</h5>
+				</Gridtile>
+				))
+			}
+		</Gridpack>
+		<Gridpack title="Showcase">
+			{
+				Object.entries(projects).map(([k, v]) => (
+				<Gridtile href={`/p/${k}`} key={k}>
+					<h5>{v.title}</h5>
+				</Gridtile>
+				))
+			}
+		</Gridpack>
+		<Gridpack title="Teams">
+			{
+				Object.entries(teams).map(([k, v]) => (
+				<Gridtile href={`/t/${k}`} key={k}>
+					<h5>{v.title}</h5>
+				</Gridtile>
+				))
+			}
+		</Gridpack>
 	</Layout>
 )

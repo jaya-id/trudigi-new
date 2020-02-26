@@ -14,4 +14,7 @@ const teams = [
 	}
 ]
 
-exports.default = teams.reduce((a,b)=> (a[b.id]=b,a),{});
+exports.default = teams.reduce((a, b) => {
+	a[b.id] = b
+	return a
+}, {});

@@ -9,4 +9,7 @@ const projects = [
 	}
 ]
 
-exports.default = projects.reduce((a,b)=> (a[b.id]=b,a),{});
+exports.default = projects.reduce((a, b) => {
+	a[b.id] = b
+	return a
+}, {});

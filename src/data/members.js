@@ -12,4 +12,7 @@ const members = [
 	}
 ]
 
-exports.default = members.reduce((a,b)=> (a[b.id]=b,a),{});
+exports.default = members.reduce((a, b) => {
+	a[b.id] = b
+	return a
+}, {});

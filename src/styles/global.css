@@ -68,7 +68,10 @@ body{
 	z-index: -1;
 }
 .product-content img{
-	width: 200px;
+	width: 100%;
+}
+.product-content .thumb{
+	max-width: 150px;
 }
 .product-content{
 	transition: all 0.3s ease 0s;

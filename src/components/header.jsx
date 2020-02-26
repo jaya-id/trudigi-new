@@ -3,7 +3,7 @@ import Logo from "../media/brand.svg"
 
 export default () => (
   <header className="header">
-	<nav className="navbar navbar-expand-lg navbar-light bg-light">
+	<nav className="navbar navbar-expand-md navbar-light">
 		<a className="navbar-brand" href="/">
 			<Logo className="mr-2" style={{height: '40px'}}/>
 			<span>TRUDIGI</span>
