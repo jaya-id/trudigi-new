@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from '../components/hero'
-import Summary from '../components/summary'
 import HeroHead from '../components/herohead'
 import Gridpack from '../components/gridpack'
 import Gridtile from '../components/gridtile'
@@ -15,13 +14,13 @@ export default () => (
 		title: "TRUDIGI",
 		description: "Di TRUDIGI Kami Memberikan Layanan Profesional untuk Solusi Digital Bisnis Anda",
 	}}>
-		<HeroHead img="/images/header1-01.svg" href="/about">
+		<HeroHead img="/images/header.png" href="/about">
 			<h2>Solusi Untuk</h2>
 			<h1>Bisnis IT</h1>
 			<h2>Anda.</h2>
-			<br></br>
+			<br/>
 			<p>Trudigi (Trunojoyo Digital Freelancer) adalah komunitas Mahasiswa Unijoyo yang bergerak membangun IT. Kami melayani pemesanan media dan pengerjaan project software dengan tujuan membantu percepatan perubahan melalui IT pada lingkungan Universitas Trunojoyo Madura</p>
-			<br></br>
+			<br/>
 		</HeroHead>
 		<Hero img="/images/tentang-01.svg">
 			<h2>Tentang</h2>
@@ -31,7 +30,7 @@ export default () => (
 			{
 				Object.entries(products).map(([k, v]) => (
 				<Gridtile href={`/s/${k}`} key={k}>
-					<img class="thumb" src={`/images/products-icon/${k}.svg`} alt=""></img>
+					<img class="thumb" src={`/images/products-icon/${k}.svg`} alt=""/>
 					<h5>{v.title}</h5>
 				</Gridtile>
 				))

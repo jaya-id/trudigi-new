@@ -19,6 +19,7 @@ export default ({ children, seo }) => (
 			{seo && seo.title ? <meta name="twitter:title" content={seo.title} /> : null}
 			{seo && seo.description ? <meta name="twitter:description" content={seo.description} /> : null}
 			{seo && seo.image ? <meta name="twitter:image" content={seo.image} /> : null}
+			<meta name="theme-color" content="#0059ff" />
 		</Helmet>
 		<Header />
 		<main>
