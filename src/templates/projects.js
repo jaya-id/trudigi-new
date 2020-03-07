@@ -6,7 +6,9 @@ import Summary from '../components/summary'
 export default ({ pageContext }) => {
 	const { project } = pageContext
 	return (
-	<Layout>
+	<Layout seo={{
+		title: project.title
+	}}>
 		<Summary>
 			<h1>{project.title}</h1>
 		</Summary>
