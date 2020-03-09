@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{"HG1/":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("L12J"),u=n("iKsa");t.default=function(e){var t=e.pageContext.team;return l.a.createElement(r.a,null,l.a.createElement(u.a,null,l.a.createElement("h1",null,t.title)))}}}]);
+//# sourceMappingURL=component---src-templates-teams-js-bff13bdcbf713e8b880b.js.map
